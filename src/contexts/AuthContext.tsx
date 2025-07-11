@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 interface User {
@@ -8,6 +7,7 @@ interface User {
   subscriptionStatus: string;
   planType: string;
   subscriptionExpiry: string;
+  createdAt?: string;
 }
 
 interface AuthContextType {
@@ -69,7 +69,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         email,
         subscriptionStatus: 'trial',
         planType: 'Trial',
-        subscriptionExpiry: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString()
+        subscriptionExpiry: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString(),
+        createdAt: new Date().toISOString()
       };
       
       setUser(newUser);
