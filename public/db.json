@@ -1,0 +1,117 @@
+
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "John Doe",
+      "email": "john@example.com",
+      "subscriptionStatus": "pro",
+      "planType": "Pro",
+      "subscriptionExpiry": "2024-12-31T23:59:59Z",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "subscriptionStatus": "starter",
+      "planType": "Starter",
+      "subscriptionExpiry": "2024-08-15T23:59:59Z",
+      "createdAt": "2024-02-01T00:00:00Z"
+    }
+  ],
+  "documents": [
+    {
+      "id": "1",
+      "userId": "1",
+      "documentName": "Passport",
+      "documentType": "Personal",
+      "expiryDate": "2025-03-15",
+      "description": "US Passport - Primary travel document",
+      "isMasked": true,
+      "maskedData": "XXXXXX789",
+      "originalData": "ABC123789",
+      "daysUntilExpiry": 94,
+      "status": "active",
+      "createdAt": "2024-01-10T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "userId": "1",
+      "documentName": "PAN Card",
+      "documentType": "Personal",
+      "expiryDate": "2025-12-31",
+      "description": "Permanent Account Number",
+      "isMasked": true,
+      "maskedData": "XXXXXX234F",
+      "originalData": "ABCDE1234F",
+      "daysUntilExpiry": 385,
+      "status": "active",
+      "createdAt": "2024-01-15T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "userId": "1",
+      "documentName": "Domain Registration",
+      "documentType": "Business",
+      "expiryDate": "2024-12-25",
+      "description": "mycompany.com domain renewal",
+      "isMasked": false,
+      "maskedData": "",
+      "originalData": "mycompany.com",
+      "daysUntilExpiry": 14,
+      "status": "expiring_soon",
+      "createdAt": "2024-01-20T00:00:00Z"
+    },
+    {
+      "id": "4",
+      "userId": "2",
+      "documentName": "Aadhaar Card",
+      "documentType": "Personal",
+      "expiryDate": "2025-06-30",
+      "description": "National ID Card",
+      "isMasked": true,
+      "maskedData": "XXXX-XXXX-1234",
+      "originalData": "1234-5678-1234",
+      "daysUntilExpiry": 201,
+      "status": "active",
+      "createdAt": "2024-02-05T00:00:00Z"
+    },
+    {
+      "id": "5",
+      "userId": "1",
+      "documentName": "SSL Certificate",
+      "documentType": "Business",
+      "expiryDate": "2024-12-20",
+      "description": "Website SSL Certificate",
+      "isMasked": false,
+      "maskedData": "",
+      "originalData": "*.docualert.com",
+      "daysUntilExpiry": 9,
+      "status": "critical",
+      "createdAt": "2024-01-25T00:00:00Z"
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "1",
+      "userId": "1",
+      "planType": "Pro",
+      "status": "active",
+      "startDate": "2024-01-01T00:00:00Z",
+      "expiryDate": "2024-12-31T23:59:59Z",
+      "price": 49,
+      "billing": "yearly"
+    },
+    {
+      "id": "2",
+      "userId": "2",
+      "planType": "Starter",
+      "status": "active",
+      "startDate": "2024-02-01T00:00:00Z",
+      "expiryDate": "2024-08-15T23:59:59Z",
+      "price": 19,
+      "billing": "yearly"
+    }
+  ]
+}
